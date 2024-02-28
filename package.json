@@ -6,28 +6,28 @@
   "engines": {
     "node": ">=16"
   },
-  "packageManager": "pnpm@8.9.0",
+  "packageManager": "yarn@4.1.0",
   "scripts": {
-    "dev:ssr": "cd ./ui/ssr-example && pnpm run dev",
-    "dev:csr": "cd ./ui/csr-example && pnpm run dev",
-    "dev:next": "cd ./ui/next-example && pnpm run dev",
-    "dev:vite": "cd ./ui/vite-example && pnpm run dev",
-    "dev:vite-ssr": "cd ./ui/vite-ssr-example && pnpm run dev",
-    "start:ssr": "cd ./ui/ssr-example && pnpm run build && pnpm run start",
-    "build:site": "cd ./ui/ssr-example && pnpm run build:static",
+    "dev:ssr": "cd ./ui/ssr-example && yarn run dev",
+    "dev:csr": "cd ./ui/csr-example && yarn run dev",
+    "dev:next": "cd ./ui/next-example && yarn run dev",
+    "dev:vite": "cd ./ui/vite-example && yarn run dev",
+    "dev:vite-ssr": "cd ./ui/vite-ssr-example && yarn run dev",
+    "start:ssr": "cd ./ui/ssr-example && yarn run build && yarn run start",
+    "build:site": "cd ./ui/ssr-example && yarn run build:static",
     "gen:gql": "graphql-codegen --config site/graphql/codegen.yaml",
     "dev": "ts-node ./scripts/rollupWatch.ts",
     "build": "ts-node ./scripts/rollupBuild.ts",
     "release": "ts-node ./scripts/release.ts",
     "lint": "eslint --cache --ext ts,tsx .",
-    "lint:fix": "pnpm run lint --fix",
+    "lint:fix": "yarn run lint --fix",
     "prettier": "prettier --ignore-path .prettierignore --write .",
-    "clean": "pnpm -p -r -c exec rm -rf dist dev .cache",
-    "purge": "pnpm -p -r -c exec rm -rf node_modules"
+    "clean": "yarn -p -r -c exec rm -rf dist dev .cache",
+    "purge": "yarn -p -r -c exec rm -rf node_modules"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pnpm build"
+      "pre-commit": "yarn build"
     }
   },
   "devDependencies": {
