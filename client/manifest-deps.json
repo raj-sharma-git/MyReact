@@ -1,0 +1,32 @@
+{
+  "./About": {
+    "path": [
+      "page-About.js"
+    ],
+    "static": true
+  },
+  "./Tldraw": {
+    "path": [
+      "page-Tldraw.js"
+    ],
+    "static": true
+  },
+  "./404": {
+    "path": [
+      "page-404.js"
+    ],
+    "static": true
+  },
+  "./Blog": {
+    "path": [
+      "page-Blog.js"
+    ],
+    "static": true
+  },
+  "./": {
+    "path": [
+      "page-.js"
+    ],
+    "static": true
+  }
+}
